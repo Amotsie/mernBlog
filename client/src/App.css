@@ -1,0 +1,43 @@
+.app {
+  margin: 0 1.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+h1 {
+  color: teal;
+}
+.form-input {
+  margin: 0.7rem auto;
+}
+
+.app button {
+  background-color: teal;
+  color: aliceblue;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  line-height: 1.5;
+  outline: none;
+}
+.app button:hover {
+  background-color: rgb(50, 141, 141);
+  color: rgb(255, 255, 255);
+}
+
+.post-display {
+  border: teal 1px solid;
+  border-radius: 0.25rem;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+
+.form-input input,
+.form-input textarea {
+  width: 50%;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px rgb(49, 126, 126) solid;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+}
