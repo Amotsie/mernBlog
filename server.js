@@ -13,12 +13,12 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 //Middlewares
-app.use(cors());
+//app.use(cors());
 app.use(json());
 app.use(express.urlencoded({ extended: false }));
 
 //Deployment options
-if (process.env.NODE_ENV == "production") {
+if (process.env.NODE_ENV === "production") {
   app.use(express.static("./client/build"));
 }
 
@@ -26,4 +26,4 @@ if (process.env.NODE_ENV == "production") {
 app.use(morgan("tiny"));
 app.use("/api", routes);
 
-app.listen(PORT, () => console.log("server started"));
+app.listen(PORT, () => console.log(`Server is starting at ${PORT}`));

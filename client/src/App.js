@@ -9,7 +9,7 @@ function App() {
 
   let getBLockPosts = () => {
     axios
-      .get("http://localhost:8080/api/")
+      .get("/api/")
       .then((response) => {
         const data = response.data;
         setPosts(data);
@@ -27,9 +27,9 @@ function App() {
       tittle,
       body,
     };
-    if (tittle == "" || body == "") return;
+    if (tittle === "" || body === "") return;
     axios({
-      url: "http://localhost:8080/api/save",
+      url: "/api/save",
       method: "POST",
       data: payload,
     })
