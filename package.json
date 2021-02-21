@@ -7,8 +7,8 @@
     "node": "12.x"
   },
   "scripts": {
-    "build": "cd .\\client && npm run build",
-    "install-client": "cd .\\client && npm install",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
     "dev": "concurrently -n 'server,client' -c 'blue,yellow' \"npm run start\" \"npm run client\""
